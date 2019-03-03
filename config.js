@@ -27,7 +27,7 @@ module.exports = {
     name: "Nadir Badnjevic",
     photo: "/profile.jpg",
     bio:
-    "A place where I share my experience with .NET, Web Development, Software Architectures, Tech leadership and more",
+    "A place where I share my experience with .NET, Web Development, Software Architectures, Tech leadership and more.",
     contacts: {
       email: "nadirbad@gmail.com",
       linkedin: "nadir-badnjevic",
