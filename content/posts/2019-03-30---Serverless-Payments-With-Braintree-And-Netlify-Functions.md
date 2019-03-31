@@ -10,7 +10,7 @@ tags:
   - 'Netlify'
   - 'Serverless'
   - 'Lamda Functions'
-description: 'Serverless payments made simple with Braintree and Netlify Lambda Functions.
+description: 'Serverless payments made simple with Braintree and Netlify Lambda Functions.'
 ---
 
 Serverless payments made simple with Braintree and Netlify Lambda Functions. Detailed blog post coming soon. In the meantime checkout working example: [https://github.com/nadirbad/netlify-functions-example](https://github.com/nadirbad/netlify-functions-example)
