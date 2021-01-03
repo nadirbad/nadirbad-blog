@@ -5,7 +5,7 @@ module.exports = {
   title: 'Blog by Nadir Badnjevic',
   subtitle:
     'A place where I share my experience with .NET, Web Development, Software Architectures, Tech leadership and more.',
-  copyright: '© 2020 All rights reserved.',
+  copyright: '© 2021 All rights reserved.',
   disqusShortname: '',
   postsPerPage: 4,
   googleAnalyticsId: 'UA-20398312-2',
