@@ -4,7 +4,7 @@ module.exports = {
   url: 'https://wwww.nadirbad.dev',
   title: 'Blog by Nadir Badnjevic',
   subtitle:
-    'A place where I share my experience with .NET, Cloud, Software Architectures and design, Tech leadership and more.',
+    'A place where I share my experience with .NET, Cloud, Software Architectures & Design, Tech leadership and more.',
   copyright: '© 2022 All rights reserved.',
   disqusShortname: '',
   postsPerPage: 4,
@@ -27,7 +27,7 @@ module.exports = {
     name: 'Nadir Badnjevic',
     photo: '/profile.jpg',
     bio:
-      'A place where I share my experience with .NET, Cloud, Software Architectures and design, Tech leadership and more.',
+      'A place where I share my experience with .NET, Cloud, Software Architectures & Design, Tech leadership and more.',
     contacts: {
       email: 'nadirbad@gmail.com',
       linkedin: 'nadir-badnjevic',
