@@ -1,12 +1,12 @@
 ---
 title: Vertical Slice Architecture in .NET 6
-date: '2022-04-22T23:46:37.121Z'
+date: '2022-04-20T08:46:37.121Z'
 template: 'post'
 draft: false
 slug: '/posts/vetical-slice-architecture-dotnet/'
 category: 'Software architecture'
 tags:
-  - 'Software Architecture'
+  - 'Architecture'
   - '.NET'
 description: 'Vertical Slice Architecture approach with project sample in .NET 6'
 ---
@@ -30,11 +30,11 @@ Tight coupling also makes it more difficult for developers working on different 
 
 Typically if I need to change a feature in a layered application, I end up touching different layers of the application and navigating through piles of projects, folders and files. For example for a simple change in a given feature you could be editing more than 5 files in all the layers:
 
-- TodoItem
-- TodoItemsRepository
-- TodoItemsService
-- TodoItemsViewModel
-- TodoItemsController
+- Domain/TodoItem.cs
+- Repositories/TodoItemsRepository.cs
+- Services/TodoItemsService.cs
+- ViewModels/TodoItemsViewModel.cs
+- Controllers/TodoItemsController.cs
 
 Layered architecture is great for some things, but it does have major drawbacks:
 
@@ -79,13 +79,25 @@ This project repository is created based on the Clean Architecture solution temp
 
 I used the Clean Architecture template, because it uses the CQRS pattern with the MediatR library and vertical slices naturally fit into the commands and queries.
 
-Another approach I took (taken from Derek Comartin) about organizing code, is to put all code related to a given feature in a single file in most cases. With this approach we are having self-explanatory file names ExportTodos.cs and all related code close together: `Api controller action methods`, `MediatR requests`, `MediatR handlers`, `validations`, `DTOs`. This is what it looks like:
+Another approach I took (taken from Derek Comartin) about organizing code, is to put all code related to a given feature in a single file in most cases. With this approach we are having self-explanatory file names ExportTodos.cs and all related code close together: Api controller action methods, MediatR requests, MediatR handlers, validations, DTOs. This is what it looks like:
 
 ![example-feature.png](/media/example-feature.png)
 
+## Benefits of Vertical Slice Architecture
+
+By building the system around vertical slices, you can avoid making compromises between cohesion and coupling. This is achieved by keeping a low coupling between vertical slices and high cohesion within the slice.
+
+Systems are developed and structured around Features and are use-case driven.
+
+Also, most abstractions aren't needed, and we usually don't need shared abstractions like services, repositories.
+
+When developing and working on feature there are fewer side effects and less paralysis surrounding the change.
+
+When following the principle of keeping things related to each other close, the structure and navigation within the codebase becomes more clear and saves time.
+
 ## The source code
 
-Check out the [source code](https://github.com/nadirbad/VerticalSliceArchitecture) for more info.
+Check out the [source code](https://github.com/nadirbad/VerticalSliceArchitecture) for more info. If you like this pls star the repository :).
 
 ## Inspired by
 
