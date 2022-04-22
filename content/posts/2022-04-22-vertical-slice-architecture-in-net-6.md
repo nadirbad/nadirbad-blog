@@ -2,7 +2,7 @@
 template: post
 title: Vertical Slice Architecture in .NET 6
 slug: /posts/vetical-slice-architecture-dotnet
-draft: true
+draft: false
 date: 2022-04-22T19:23:38.477Z
 description: Vertical Slice Architecture approach with project sample in .NET 6
 category: Software Architecture
