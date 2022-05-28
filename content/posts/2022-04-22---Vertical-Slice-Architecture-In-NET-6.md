@@ -4,12 +4,13 @@ title: Vertical Slice Architecture in .NET 6
 slug: /posts/vetical-slice-architecture-dotnet/
 draft: false
 date: 2022-04-22T19:23:38.477Z
-description: Vertical Slice Architecture approach with project sample in .NET 6
+description: Vertical Slice Architecture approach with project sample in .NET 6.
 category: Software Architecture
 tags:
   - Architecture
   - .NET
 ---
+
 ## Traditional Layered Architecture
 
 The first approach is the traditional layered architecture. This is a very common way to organize code and has been a standard for decades. I’m sure you have seen and used this on many projects before. A traditional layered/onion architecture approach organizes code around technical concerns in layers. In this approach, different layers are defined based on their responsibilities in the system. The layers then depend on each other so that they can collaborate and achieve their responsibilities. The dependency flow is guaranteed by forcing each layer to only depend on the ones below them (e.g., the presentation layer can only call code in the business logic layer).
